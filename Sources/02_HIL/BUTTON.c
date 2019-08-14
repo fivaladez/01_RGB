@@ -19,12 +19,6 @@
 /*Original 2500*/
 #define DEBOUNCING (20u)/*You must adjust the value according to the performance of the main code*/
 
-void vfdelay_BUTTON(uint32_t u32Time);
-
-/*
-** Makes a decrement count until get to 0
-** It is for wasting time
-*/
 void vfdelay_BUTTON(uint32_t u32Time)
 {
     while(u32Time--);
@@ -71,7 +65,7 @@ eSTATUS_BUTTON_t efCreate_BUTTON  (sBUTTON_t *psButton, ePORTx_BUTTON_t ePort,eP
         if(ePin == ePIN_0_GPIO  || ePin == ePIN_1_GPIO  || ePin == ePIN_2_GPIO  || ePin == ePIN_3_GPIO ||
            ePin == ePIN_4_GPIO  || ePin == ePIN_5_GPIO  || ePin == ePIN_6_GPIO  || ePin == ePIN_7_GPIO ||
            ePin == ePIN_8_GPIO  || ePin == ePIN_9_GPIO  || ePin == ePIN_10_GPIO || ePin == ePIN_11_GPIO||
-           ePin == ePIN_12_GPIO || ePin == ePIN_13_GPIO || ePin == ePIN_16_GPIO || ePIN_17_GPIO)
+           ePin == ePIN_12_GPIO || ePin == ePIN_13_GPIO || ePin == ePIN_16_GPIO || ePin == ePIN_17_GPIO)
         {
             if((eSTATUS_GPIO_t)eTRUE_BUTTON == efInit_GPIO( ePort, ePin, eINPUT_GPIO ) )
             {
@@ -86,7 +80,7 @@ eSTATUS_BUTTON_t efCreate_BUTTON  (sBUTTON_t *psButton, ePORTx_BUTTON_t ePort,eP
         break;
     case ePORTD_GPIO:
         if(ePin == ePIN_0_GPIO || ePin == ePIN_1_GPIO || ePin == ePIN_2_GPIO || ePin == ePIN_3_GPIO ||
-           ePin == ePIN_4_GPIO || ePin == ePIN_5_GPIO    || ePin == ePIN_6_GPIO || ePin == ePIN_7_GPIO)
+           ePin == ePIN_4_GPIO || ePin == ePIN_5_GPIO || ePin == ePIN_6_GPIO || ePin == ePIN_7_GPIO)
         {
             if((eSTATUS_GPIO_t)eTRUE_BUTTON == efInit_GPIO( ePort, ePin, eINPUT_GPIO ) )
             {

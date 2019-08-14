@@ -63,4 +63,10 @@ void vfToggle_LED (eCOLORS_LED_t eColor);
 */
 eSTATUS_LED_t efRead_LED   (eCOLORS_LED_t eColor);
 
+/*
+** Makes a decrement count until get to 0
+** It is for wasting time
+*/
+void vfdelay_BUTTON(uint32_t u32Time);
+
 #endif /* LEDS_H_ */

@@ -17,7 +17,7 @@ ePORTx_LED_t ePortBlue_LED  = ePORTD_GPIO;
 
 ePINx_LED_t ePinRed_LED     = ePIN_18_GPIO;
 ePINx_LED_t ePinGreen_LED   = ePIN_19_GPIO;
-ePINx_LED_t ePinBlue_LED    = ePIN_1_GPIO;
+ePINx_LED_t ePinBlue_LED    = ePIN_1_GPIO; 
 
 eSTATUS_LED_t efInit_LED   (eCOLORS_LED_t eColor)
 {
