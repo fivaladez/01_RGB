@@ -14,8 +14,6 @@
 #include "derivative.h"
 #include "GPIO.h"
 
-#define NONBLOCKING    (0u)
-
 typedef ePINx_GPIO_t   ePINx_BUTTON_t;
 
 typedef ePORTx_GPIO_t  ePORTx_BUTTON_t;
